@@ -18,11 +18,11 @@
 
  1.1 https://huggingface.co/　の右上のSign Upより登録してください。
 
- 1.2 https://huggingface.co/docs/hub/security-tokens　を読み、アクセストークンの作り方を理解してください。
+ 1.2 https://huggingface.co/docs/hub/security-tokens 　を読み、アクセストークンの作り方を理解してください。
 
  1.3 演習ではgemmaを利用する予定です。ライセンス登録など必要な準備を済ませておいてください。
 
- https://huggingface.co/google/gemma-2-2b-jpn-it 「Access Gemma on Hugging Face」からライセンスへの同意をする。
+ https://huggingface.co/google/gemma-2-2b-jpn-it  「Access Gemma on Hugging Face」からライセンスへの同意をする。
 
 [2] Github
 
