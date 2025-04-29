@@ -21,7 +21,8 @@ CREATE TABLE IF NOT EXISTS {TABLE_NAME}
  bleu_score REAL,
  similarity_score REAL,
  word_count INTEGER,
- relevance_score REAL)
+ relevance_score REAL,
+ share_internally BOOLEAN)  -- 新しいフィールドを追加
 '''
 
 # --- データベース初期化 ---
@@ -30,7 +31,23 @@ def init_db():
     try:
         conn = sqlite3.connect(DB_FILE)
         c = conn.cursor()
-        c.execute(SCHEMA)
+
+        # テーブルが存在するか確認
+        c.execute(f"SELECT name FROM sqlite_master WHERE type='table' AND name='{TABLE_NAME}'")
+        table_exists = c.fetchone() is not None
+
+        if table_exists:
+            # テーブルが存在する場合、share_internallyカラムの存在を確認
+            c.execute(f"PRAGMA table_info({TABLE_NAME})")
+            columns = [column[1] for column in c.fetchall()]
+            
+            if 'share_internally' not in columns:
+                # share_internallyカラムが存在しない場合、マイグレーションを実行
+                migrate_database()
+        else:
+            # テーブルが存在しない場合、新しいスキーマで作成
+            c.execute(SCHEMA)
+            
         conn.commit()
         conn.close()
         print(f"Database '{DB_FILE}' initialized successfully.")
@@ -39,7 +56,7 @@ def init_db():
         raise e # エラーを再発生させてアプリの起動を止めるか、適切に処理する
 
 # --- データ操作関数 ---
-def save_to_db(question, answer, feedback, correct_answer, is_correct, response_time):
+def save_to_db(question, answer, feedback, correct_answer, is_correct, response_time, share_internally=False):
     """チャット履歴と評価指標をデータベースに保存する"""
     conn = None
     try:
@@ -54,10 +71,10 @@ def save_to_db(question, answer, feedback, correct_answer, is_correct, response_
 
         c.execute(f'''
         INSERT INTO {TABLE_NAME} (timestamp, question, answer, feedback, correct_answer, is_correct,
-                                 response_time, bleu_score, similarity_score, word_count, relevance_score)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                                 response_time, bleu_score, similarity_score, word_count, relevance_score, share_internally)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (timestamp, question, answer, feedback, correct_answer, is_correct,
-             response_time, bleu_score, similarity_score, word_count, relevance_score))
+             response_time, bleu_score, similarity_score, word_count, relevance_score, share_internally))
         conn.commit()
         print("Data saved to DB successfully.") # デバッグ用
     except sqlite3.Error as e:
@@ -122,6 +139,68 @@ def clear_db():
         st.error(f"データベースのクリア中にエラーが発生しました: {e}")
         st.session_state.confirm_clear = False # エラー時もリセット
         return False # 削除失敗
+    finally:
+        if conn:
+            conn.close()
+
+def migrate_database():
+    """データベースのスキーマを更新し、既存データを移行する"""
+    try:
+        conn = sqlite3.connect(DB_FILE)
+        c = conn.cursor()
+
+        # 一時テーブルにデータをバックアップ
+        c.execute(f"""
+        CREATE TABLE IF NOT EXISTS temp_chat_history AS 
+        SELECT * FROM {TABLE_NAME}
+        """)
+
+        # 既存のテーブルを削除
+        c.execute(f"DROP TABLE IF EXISTS {TABLE_NAME}")
+
+        # 新しいスキーマでテーブルを作成
+        c.execute(f'''
+        CREATE TABLE {TABLE_NAME}
+        (id INTEGER PRIMARY KEY AUTOINCREMENT,
+         timestamp TEXT,
+         question TEXT,
+         answer TEXT,
+         feedback TEXT,
+         correct_answer TEXT,
+         is_correct REAL,
+         response_time REAL,
+         bleu_score REAL,
+         similarity_score REAL,
+         word_count INTEGER,
+         relevance_score REAL,
+         share_internally BOOLEAN DEFAULT FALSE)
+        ''')
+
+        # データを新しいテーブルに移行
+        c.execute(f"""
+        INSERT INTO {TABLE_NAME} (
+            id, timestamp, question, answer, feedback, 
+            correct_answer, is_correct, response_time, 
+            bleu_score, similarity_score, word_count, 
+            relevance_score
+        )
+        SELECT 
+            id, timestamp, question, answer, feedback, 
+            correct_answer, is_correct, response_time, 
+            bleu_score, similarity_score, word_count, 
+            relevance_score
+        FROM temp_chat_history
+        """)
+
+        # 一時テーブルを削除
+        c.execute("DROP TABLE IF EXISTS temp_chat_history")
+
+        conn.commit()
+        print("データベースの移行が完了しました。")
+        
+    except sqlite3.Error as e:
+        print(f"データベースの移行中にエラーが発生しました: {e}")
+        raise e
     finally:
         if conn:
             conn.close()
