@@ -10,8 +10,52 @@ from metrics import get_metrics_descriptions
 # --- チャットページのUI ---
 def display_chat_page(pipe):
     """チャットページのUIを表示する"""
+
+    # ヘッダー部分のスタイリング
+    st.markdown("""
+        <div style='background-color: #f8f9fa; padding: 1rem; border-radius: 4px; margin-bottom: 2rem;'>
+            <h4 style='color: #2c3e50; margin: 0;'>ジョブクラウン社内チャットアシスタント</h4>
+            <p style='color: #6c757d; margin: 0.5rem 0 0 0;'>業務効率化のためのAIアシスタントです</p>
+        </div>
+    """, unsafe_allow_html=True)
+
+    # カテゴリ選択を追加
+    question_category = st.selectbox(
+        "質問カテゴリを選択してください",
+        [
+            "社内規定・手続き",
+            "業務効率化・改善",
+            "社内システム",
+            "人事・労務",
+            "その他"
+        ]
+    )
+
     st.subheader("質問を入力してください")
-    user_question = st.text_area("質問", key="question_input", height=100, value=st.session_state.get("current_question", ""))
+    # プレースホルダーテキストを追加
+    placeholder_text = {
+        "社内規定・手続き": "例：有給休暇の申請方法を教えてください",
+        "業務効率化・改善": "例：Excel作業の効率化について相談したい",
+        "社内システム": "例：社内システムのログイン方法がわかりません",
+        "人事・労務": "例：残業申請の手順を教えてください",
+        "その他": "例：社内の問い合わせ先を知りたい"
+    }
+    #user_question = st.text_area("質問", key="question_input", height=100, value=st.session_state.get("current_question", ""))
+    user_question = st.text_area(
+        "質問",
+        key="question_input",
+        height=100,
+        value=st.session_state.get("current_question", ""),
+        placeholder=placeholder_text[question_category]
+    )
+
+    # 緊急度の選択を追加
+    urgency = st.radio(
+        "緊急度",
+        ["通常", "至急", "緊急"],
+        horizontal=True
+    )
+
     submit_button = st.button("質問を送信")
 
     # セッション状態の初期化（安全のため）
@@ -59,32 +103,70 @@ def display_chat_page(pipe):
 
 def display_feedback_form():
     """フィードバック入力フォームを表示する"""
-    with st.form("feedback_form"):
+    #with st.form("feedback_form"):
+    with st.form("feedback_form", clear_on_submit=False):
+        st.markdown("""
+            <div style='margin-bottom: 1rem;'>
+                <h5 style='color: #2c3e50;'>フィードバック</h5>
+                <p style='color: #6c757d; font-size: 0.9rem;'>
+                    回答の品質向上のため、フィードバックにご協力ください。
+                </p>
+            </div>
+        """, unsafe_allow_html=True)
+
         st.subheader("フィードバック")
-        feedback_options = ["正確", "部分的に正確", "不正確"]
+        
+        #feedback_options = ["正確", "部分的に正確", "不正確"]
+        feedback_options = ["適切", "要改善", "不適切"]
         # label_visibility='collapsed' でラベルを隠す
-        feedback = st.radio("回答の評価", feedback_options, key="feedback_radio", label_visibility='collapsed', horizontal=True)
+        #feedback = st.radio("回答の評価", feedback_options, key="feedback_radio", label_visibility='collapsed', horizontal=True)
+        feedback = st.radio("回答の評価",
+                            feedback_options,
+                            key="feedback_radio",
+                            label_visibility='collapsed',
+                            horizontal=True
+        )
+        # 業務への有用性評価を追加
+        usefulness = st.slider(
+            "業務への有用性",
+            min_value=1,
+            max_value=5,
+            value=3,
+            help="この回答は業務にどの程度役立ちましたか？"
+        )
+
         correct_answer = st.text_area("より正確な回答（任意）", key="correct_answer_input", height=100)
         feedback_comment = st.text_area("コメント（任意）", key="feedback_comment_input", height=100)
+
+        # 社内共有の承認
+        share_internally = st.checkbox(
+            "この質問と回答を社内ナレッジベースとして共有することに同意します"
+        )
+
         submitted = st.form_submit_button("フィードバックを送信")
         if submitted:
             # フィードバックをデータベースに保存
-            is_correct = 1.0 if feedback == "正確" else (0.5 if feedback == "部分的に正確" else 0.0)
+            #is_correct = 1.0 if feedback == "正確" else (0.5 if feedback == "部分的に正確" else 0.0)
+            is_correct = 1.0 if feedback == "適切" else (0.5 if feedback == "要改善" else 0.0)
             # コメントがない場合でも '正確' などの評価はfeedbackに含まれるようにする
-            combined_feedback = f"{feedback}"
+            #combined_feedback = f"{feedback}"
+            combined_feedback = f"{feedback} (有用性: {usefulness}/5)"
             if feedback_comment:
                 combined_feedback += f": {feedback_comment}"
 
+            # データベースに保存
             save_to_db(
                 st.session_state.current_question,
                 st.session_state.current_answer,
                 combined_feedback,
                 correct_answer,
                 is_correct,
-                st.session_state.response_time
+                st.session_state.response_time,
+                share_internally  # 新しいフィールドとして追加が必要
             )
             st.session_state.feedback_given = True
-            st.success("フィードバックが保存されました！")
+            #st.success("フィードバックが保存されました！")
+            st.success("フィードバックありがとうございました！")
             # フォーム送信後に状態をリセットしない方が、ユーザーは結果を確認しやすいかも
             # 必要ならここでリセットして st.rerun()
             st.rerun() # フィードバックフォームを消すために再実行

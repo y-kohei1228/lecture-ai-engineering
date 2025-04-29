@@ -9,9 +9,21 @@ import torch
 from transformers import pipeline
 from config import MODEL_NAME
 from huggingface_hub import HfFolder
+import os
+
+# CSSファイルの読み込み
+def load_css():
+    css_file = os.path.join(os.path.dirname(__file__), "style.css")
+    with open(css_file) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # --- アプリケーション設定 ---
-st.set_page_config(page_title="Gemma Chatbot", layout="wide")
+#st.set_page_config(page_title="Gemma Chatbot", layout="wide")
+st.set_page_config(page_title="ジョブクラウン社内チャットボットサイト", 
+                   layout="wide",
+                   page_icon="👔",  # 企業用のアイコン
+                   initial_sidebar_state="expanded"
+                   )
 
 # --- 初期化処理 ---
 # NLTKデータのダウンロード（初回起動時など）
@@ -46,8 +58,33 @@ def load_model():
 pipe = llm.load_model()
 
 # --- Streamlit アプリケーション ---
-st.title("🤖 Gemma 2 Chatbot with Feedback")
-st.write("Gemmaモデルを使用したチャットボットです。回答に対してフィードバックを行えます。")
+
+# CSSの適用
+load_css()
+
+# カスタムテーマの設定
+st.markdown("""
+    <style>
+    :root {
+        --primary-color: #2c3e50;
+        --background-color: #ffffff;
+        --secondary-background-color: #f8f9fa;
+        --text-color: #2c3e50;
+        --font: "Helvetica Neue", sans-serif;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+#st.title("🤖 Gemma 2 Chatbot with Feedback")
+st.title("ジョブクラウン社内チャットボット")
+#st.write("Gemmaモデルを使用したチャットボットです。回答に対してフィードバックを行えます。")
+st.write("社内の質問や業務サポートを行うAIアシスタントです。")
+st.markdown("""
+- 社内規定や手続きに関する質問
+- 業務効率化のアドバイス
+- 社内システムの使用方法
+などについてお答えします。
+""")
 st.markdown("---")
 
 # --- サイドバー ---
@@ -78,4 +115,5 @@ elif st.session_state.page == "サンプルデータ管理":
 
 # --- フッターなど（任意） ---
 st.sidebar.markdown("---")
-st.sidebar.info("開発者: [Your Name]")
+#st.sidebar.info("開発者: [Your Name]")
+st.sidebar.info("開発者: 吉川耕平")
