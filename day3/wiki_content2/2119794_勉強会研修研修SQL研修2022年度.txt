@@ -1,0 +1,50 @@
+# 勉強会・研修/研修/SQL研修/2022年度
+# ID: 2119794
+# 作成者: TOKIWA HARUKI
+# 作成日時: 2022-09-06T12:38:08Z
+# 更新日時: 2023-02-07T12:06:58Z
+
+#2022年度SQL研修
+* メイン講師：常磐
+* 講義時間：各1時間
+* 受講方法：Web（Zoomを予定）
+
+##研修概要
+###目的
+* SQLに関して記述及び操作に関する基礎知識を習得する
+* SESでSQL技術者として案件応募する際等に、営業および自身が「基礎的なSQLは学習済みです！」と胸をはって主張できるほどの自信を身に着ける
+
+###進め方
+* 講師がZoom画面上にテキストを表示し、その内容に沿って解説する
+* 講義終了後に宿題が出るので、各受講者は次の講義までに講師に提出してもらう
+
+##日程
+| No  | 日時 | テキスト | 宿題 | 
+| ------------- | ------------- | ------------- | ------------- |
+| 第1回 | 10月11日（火）<br>20:00～21:00  | [テキスト](https://docs.google.com/presentation/d/1JIUpoADu97zW_3eH30wQ315df1H26Rt6/edit?usp=sharing&ouid=105404818319332191614&rtpof=true&sd=true) | ― |
+| 第2回 | 10月25日（火）<br>20:00～21:00  | [テキスト](https://docs.google.com/presentation/d/1eWz5gmqy2b05dawxdbYUbVyUXoHrvlNa/edit?usp=sharing&ouid=105404818319332191614&rtpof=true&sd=true) | [宿題](https://docs.google.com/spreadsheets/d/1rIHHJew3ZRbZMNNQFxAuH7GAliwbS8wj/edit?usp=sharing&ouid=105404818319332191614&rtpof=true&sd=true) |
+| 第3回 | 11月8日（火）<br>20:00～21:00  | [テキスト](https://docs.google.com/presentation/d/1ZpHGh7y_IKnpq4mQ9CQ1ZDTJufhKFcNn/edit?usp=sharing&ouid=105404818319332191614&rtpof=true&sd=true)  | [宿題](https://docs.google.com/spreadsheets/d/1CVbYO7xc_u42QVRT72CV45YpEKhjJBSK/edit?usp=sharing&ouid=105404818319332191614&rtpof=true&sd=true) |
+| 第4回 | 11月22日（火）<br>20:00～21:00  | [テキスト](https://docs.google.com/presentation/d/1iSSfUFi9n4gL10r5pNXdekGDN9Sj0_D7/edit?usp=sharing&ouid=105404818319332191614&rtpof=true&sd=true)  | [宿題](https://docs.google.com/spreadsheets/d/11Bi-eo6i2ZpVlNmxSz4ml0BSQjC76Jgq/edit?usp=share_link&ouid=105404818319332191614&rtpof=true&sd=true) |
+| 第5回 | 12月6日（火）<br>20:00～21:00  | [テキスト](https://docs.google.com/presentation/d/1FhGdMIbKmhteR4mZww-Ss_0ZLt5dpZ_g/edit?usp=sharing&ouid=105404818319332191614&rtpof=true&sd=true)  | [宿題](https://docs.google.com/spreadsheets/d/1rMCzGyk_Av1K3U8kWXh6ApIj5f2Zr7aw/edit?usp=share_link&ouid=105404818319332191614&rtpof=true&sd=true) |
+| 第6回 | 12月20日（火）<br>20:00～21:00  | [テキスト](https://docs.google.com/presentation/d/1Cey4NioeH1nYJd_36ZdXotQ355owFgIo/edit?usp=sharing&ouid=105404818319332191614&rtpof=true&sd=true) | [宿題](https://docs.google.com/spreadsheets/d/16QdJC7A3xDvDIsiA18SASMtmzskg3XFk/edit?usp=share_link&ouid=105404818319332191614&rtpof=true&sd=true) |
+| 第7回 | 1月10日（火）<br>20:00～21:00  | [テキスト](https://docs.google.com/presentation/d/1yBEOUNs3S9AjppPc5mDTx-aaVm1zkQ7z/edit?usp=sharing&ouid=105404818319332191614&rtpof=true&sd=true) | [宿題](https://docs.google.com/spreadsheets/d/1tJEaoHsCNwrihE2BlG8G0X0tbLI9FFTd/edit?usp=share_link&ouid=105404818319332191614&rtpof=true&sd=true) |
+| 第8回 | 1月24日（火）<br>20:00～21:00  | [テキスト](https://docs.google.com/presentation/d/1SxM2M1OHVHkV_BQ-1cwqPynApaP5dztX/edit?usp=sharing&ouid=105404818319332191614&rtpof=true&sd=true)| [宿題](https://docs.google.com/spreadsheets/d/1AuZp2gc1dYNoam9CNmzdpDbEUcemDKSx/edit?usp=share_link&ouid=105404818319332191614&rtpof=true&sd=true) |
+| 第9回 | 2月7日（水）<br>20:00～21:00  | [テキスト](https://docs.google.com/presentation/d/13Ikzf321TOGa6h34zuwf7cylmRGFDHn_/edit?usp=sharing&ouid=105404818319332191614&rtpof=true&sd=true) | [宿題](https://docs.google.com/spreadsheets/d/1VOKI3F6VcRpirm1SPi1TrRoZONZqV50L/edit?usp=share_link&ouid=105404818319332191614&rtpof=true&sd=true) |
+
+###SQL研修テキスト索引
+ [索引.xlsx][811984]
+
+###宿題提出先
+ [提出先リンク](https://jobcrown.app.box.com/f/2ea64610e067439eb9ca22e772e67d3c) 
+
+##対象者
+まず受講希望者を募集します。人数に満たなかった場合はこちら側から選定します。受講者は最大6名程度の予定です。
+ **※講義は、業務都合や体調不良等など止むを得ず欠席する場合以外は、必ず出席してください。** 
+ **　有休・欠勤・代休日は出席の必要はありません。**
+
+##勤務表
+補助項目申請を行い、項目を「自社業務（研修）」、申請メッセージを「SQL研修のため」として申請を行ってください。
+
+##備考
+研修修了者には修了書を発行します
+[SQL研修修了証明書.pdf][811656]

@@ -1,0 +1,48 @@
+# 全社通知/評価制度
+# ID: 2833197
+# 作成者: 飯田 浩史
+# 作成日時: 2023-07-24T07:41:48Z
+# 更新日時: 2024-02-02T00:45:19Z
+
+#評価制度（23年度から刷新）
+
+##[意義 ](https://jobcrown.box.com/s/v5hcbhn6l3fd6cm4rj4m7lpxseshewfv) 
+
+##[メンター制度とチーム構成について](https://docs.google.com/spreadsheets/d/1LYmG_bygKaZb3RNnvDj_-ZumALeQ-cDc7l04SvPaLxM/edit#gid=414275588)
+チームの運用方針は23年12月より下記に変更
+https://docs.google.com/presentation/d/1r_sChKmqTlWWhDVUOxfo7kvjspldQCw1w5ALvMNUMGE/edit#slide=id.p
+
+##[新グレード定義と評価制度の説明](https://docs.google.com/presentation/d/1LQnhZcO1uWKKZVg5_mGcLa0H_6NB6AMRBizW_58a09k/edit#slide=id.p1)
+
+###グレード定義変更（23年9月より）
+ [GMとGS](https://docs.google.com/presentation/d/1tO0ZrV87P3uOGn2GZJfa_T6mKvxh1zlJlDygIqYLJTI/edit?usp=sharing) 
+G3より、マネジメントコースとスペシャリストコースに分けることとする。
+
+### 絶対評価フローの説明
+[絶対評価項目](https://docs.google.com/spreadsheets/d/1kqbRRrajO8SRqQJ_ET3P6xOQsxf5gTvRgMM77ipipFU/edit#gid=0)
+※当初ポイント制をとり、月額給与を変更させる想定をしていたが、昇格基準を示すこととし、ポイントの付与は行わない（23年11月時点）
+
+###目標設定フローの説明
+[自己紹介シート](https://jobcrown.box.com/s/h4325yj77sdyxcjy2t43ke27gofl90od)
+[評価面談シート](https://docs.google.com/spreadsheets/d/1jJxpSTIqXWQjKT-YaB4cuVAhaOYU_VaFu8c3LQL3DQQ/edit?usp=share_link)
+[面談実施シート](https://docs.google.com/spreadsheets/d/1L7F6S5HtVW6x-uiojABJbOmdTMZpN7NwPoI9EV1xIR0/edit?usp=share_link)
+※当初年2回を想定していたが、年3回の実施とする（23年9月より）
+
+###年収早見表　※あくまで簡易計算による早見表
+| 月単価 | 年間売上| 人件費 | 年収 |
+| ------------- | ------------- |------------- |------------- |
+| 30万 | 360万 | 288万  | 236万 |
+| 40万 | 480万 | 384万  | 314万 |
+| 50万 | 600万 | 480万  | 390万 |
+| 60万 | 720万 | 576万  | 472万 |
+| 70万 | 840万 | 672万  | 551万 |
+| 80万 | 960万 | 768万  | 630万 |
+| 90万 | 1080万 | 864万  | 708万 |
+| 100万 | 1200万 | 960万  | 787万 |
+| 110万 | 1320万 | 1056万  | 865万 |
+| 120万 | 1440万 | 1152万  | 944万 |
+
+※グレード毎の目標利益率や、評価点数、売上額等により実際の支給額は上下する。
+※人件費ベースでの8割還元。（定期代や通勤費、会社が折半している社会保険込）
+※年収は額面ベースでの給与と賞与の合計値
+※今後未経験入社に関しては、何かしらの救済措置を適用することを検討中（助成金活用等）

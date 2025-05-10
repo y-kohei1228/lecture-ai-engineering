@@ -1,0 +1,45 @@
+# 勉強会・研修/研修/Pyhton研修
+# ID: 1845916
+# 作成者: 津山太郎
+# 作成日時: 2022-05-13T06:22:27Z
+# 更新日時: 2022-05-27T09:55:47Z
+
+# 2022年度 Python 研修
+
+* メイン講師: 津山
+* 講義時間: 各1.5 ～ 2時間
+* 受講方法: Web (Zoom を予定)
+
+## 研修概要
+
+### 目的
+* プログラミング入門
+* Python 入門
+* 「Python3 エンジニア認定基礎試験」の合格を目指す
+
+### 進め方
+* 講師が Zoom 画面上にテキストを表示し、その内容に沿って解説してきます。
+* 講義中に配布した環境にて課題を取り組んでいただきます。
+
+### 受講のルール
+* 可能な限りカメラオンにしてください。(受講者の反応が分からないので)
+
+### 日程
+| No | 日時 | テキスト | テーマ | Zoom | ミーティングID | パスコード |
+|:-:|
+| 第 1 回 | 5/13 (金) 20:00 ～ 21:30 | [ひよこコース](https://tarotsuyama.github.io/PythonStudyDocuments/hiyoko_index.html)| Python 入門 | [Zoom](https://us05web.zoom.us/j/2904267685?pwd=ZEFPanNEWUl4SGF1dXdnOXBxYUVSQT09
+) | 290 426 7685 | tamM6P |
+| 第 2 回 | 5/20 (金) 20:00 ～ 22:00| [ひよこコース](https://tarotsuyama.github.io/PythonStudyDocuments/hiyoko_index.html)| イテラブルオブジェクト |  [Zoom](https://us06web.zoom.us/j/84909877222?pwd=YWRaZjdvaUFuZUdjVnU0YnRkWlVEZz09)  | 849 0987 7222 | 194163 |
+| 第 3 回 | 5/27 (金) 20:00 ～ 22:00 | [ひよこコース](https://tarotsuyama.github.io/PythonStudyDocuments/hiyoko_index.html)| 関数 |  [Zoom](https://us06web.zoom.us/j/89507894922?pwd=b0pQekFQcEs0RitGb3FRNXF1bEJrUT09)  | 895 0789 4922 | 623503 |
+| 第 4 回 | 6/3 (金) 20:00 ～ 22:00  | [ひよこコース](https://tarotsuyama.github.io/PythonStudyDocuments/hiyoko_index.html)| モジュール・ライブラリ、クラス | [Zoom](https://us06web.zoom.us/j/82474909028?pwd=SGMzRUdnT09zdEJzZmQ3cEh6MUZxdz09) |  824 7490 9028 | 320020 |
+| 第 5 回 | 6/10 (金) 20:00 ～ 22:00  | [ひよこコース](https://tarotsuyama.github.io/PythonStudyDocuments/hiyoko_index.html)| Python3 エンジニア認定基礎試験 |  [Zoom](https://us06web.zoom.us/j/84939239012?pwd=cHQ0aGNCeldPaXRzOFFEQlE3RGEzdz09)  | 849 3923 9012 | 989297 |
+
+
+## 対象者
+* 希望者を募集
+
+## 勤務表
+「Python 研修（20:00-21:30）」として備考欄に記載の上、勤務として計上
+
+## 備考
+研修修了後、「Python3 エンジニア認定基礎試験」の合格者には修了証を発行します。

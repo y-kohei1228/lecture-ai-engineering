@@ -1,0 +1,55 @@
+# 勉強会・研修/研修/ドキュメント研修/2021年度
+# ID: 1367045
+# 作成者: 飯田 浩史
+# 作成日時: 2021-09-29T01:01:16Z
+# 更新日時: 2022-11-22T05:45:43Z
+
+#2021年度ドキュメント研修
+* メイン講師：飯田
+* 講義時間：各1時間
+* 受講方法：Web（Zoomを予定）
+
+##研修概要
+###目的
+* 設計書やテスト仕様書に関して、どういうものかを理解し現場に参画した際に業務を円滑に開始できるようにする
+    * 設計書の意義や注意点、それぞれのつながりを理解し、開発する際に要件を的確に把握できるようになる
+    * テストケースやシナリオの違い・考え方について理解し、簡単なケースであれば作成できるようになる
+* 地雷パターンを把握し、炎上を避けるような行動をとれるようになる
+    * ドキュメントが整っていないプロジェクトは炎上する率が高い
+* 将来的にジョブクラウンで受託案件等を受注した際の下地を作りたい
+    * どういうフォーマットでどんなドキュメントを残すべきかの判断軸を作っていく
+
+###進め方
+* 講師がZoom画面上にテキストを表示し、その内容に沿って解説してきます。
+* 毎回の講義の後に確認問題を出します。宿題とは異なり、時間中に解いてもらって構いません。（テキストも見て良い）
+
+##日程
+| No  | 日時 | テキスト | 確認問題 | Zoom | ミーティングID | パスコード | 
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| 第1回 | 11月2日（火）<br>20:00～21:00  | [概要説明・基本設計](https://jobcrown.box.com/s/u7xaywkyrou7vie900o8519hhs9224ry)  | [確認問題](https://forms.gle/Bc4a6MFcEt1oQL676)  | [Zoom](https://zoom.us/j/92842127070?pwd=bDJ1eXlWelZLQWwrUWtLS0pKemlIUT09) | 928 4212 7070 | 702372|
+| 第2回 | 11月30日（火）<br>20:00～21:00  |  [詳細設計](https://jobcrown.box.com/s/q8qz1yxcmown5hidd0wltlm0pd1tjp6l)  |  [確認問題](https://forms.gle/6J5UPJjwGhw8LzKx8)  | [Zoom](https://zoom.us/j/98779913323?pwd=RjNPdE52MTlSTXRDV2pmZUhPM0FEZz09) | 987 7991 3323 | 942122|
+| 第3回 | 12月14日（火）<br>20:00～21:00  |  [単体テスト](https://jobcrown.box.com/s/dsk6d66e0w25fkq1w4axvbywj259sxbt)  |  [確認問題](https://forms.gle/8tWXYwFu46tWciGk6)  | [Zoom](https://zoom.us/j/99180889756?pwd=OWR2Y2lST1YzMTJENEtCelJqcEVRZz09) | 991 8088 9756 | 451614|
+| 第4回 | 1月11日（火）<br>20:00～21:00  |  [結合テスト](https://jobcrown.box.com/s/vuer6iv865yrhdsj02alxckvv01rymvd) |  [確認問題](https://forms.gle/Xyb1yFHWpTBEbQbA9)  | [Zoom](https://zoom.us/j/94164470097?pwd=ZG42RWxKR1NlcW9FNUFvOThOTVZxUT09)  | 941 6447 0097 | 979728|
+| 第5回 | 1月24日（月）<br>20:00～21:00  | [要件定義 ](https://jobcrown.box.com/s/93oamhcfi4fo3viwgotoqkrma8cunx5h) |  [確認問題](https://forms.gle/9UKZYv5YCdZyhbhB8)  | [Zoom](https://us06web.zoom.us/j/84747179922?pwd=cXR2Wlh1c3d3RjhlZk5ORXU0QXd3QT09)  | 847 4717 9922 | 5RqzQQ|
+| 第6回 | 2月8日（火）<br>20:00～21:00  |  [システムテスト](https://jobcrown.box.com/s/qnkigae28m1jlqu8snhr5oo05u5lawh2)  | [確認問題](https://forms.gle/JCbakeEZp2eFfuGt8)  | [Zoom](https://zoom.us/j/92750005998?pwd=WlpZdFBTSzZqOUhTTm1qTWhHaXZtQT09)  | 927 5000 5998 | 947456|
+※もしかしたら第7回があるかもしれません。
+※突発的な理由以外では基本的に毎回参加をお願いします。
+![image][各工程の進み方.png]
+
+##対象者（6名程度）
+* 希望者募集
+    * 先だってまずは希望者を募集するので、受けたい人は飯田宛にDMを（質問や相談も受け付けます）
+* 個別に連絡
+    * 部として受けてほしい人を指名
+    * 希望者の人数次第
+
+##勤務表
+「ドキュメント研修（20:00-21:00）」として備考欄に記載の上、勤務として計上。
+
+##備考
+研修修了者には修了書を発行します。
+研修中に退職・休職が決まった場合は、参加する必要はありません。
+
+###補足資料
+*  [IT業界の開発プロジェクトの各工程説明](https://jobcrown.box.com/s/c3iv2ydmngw8k86yyjqf2qncbv3x9yqu) 
+*  [IT業界の開発プロジェクトの動き方](https://jobcrown.box.com/s/388888vrs87knuwuy6kw3ya52ipdgigk) 

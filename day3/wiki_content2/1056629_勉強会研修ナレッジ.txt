@@ -1,0 +1,32 @@
+# 勉強会・研修/ナレッジ
+# ID: 1056629
+# 作成者: 飯田 浩史
+# 作成日時: 2021-04-26T11:23:28Z
+# 更新日時: 2024-02-02T10:34:55Z
+
+#ここにはナレッジを記載していきます。
+
+
+>ナレッジとは、知、知識、知恵、知見、認識、理解などの意味を持つ英単語。
+>ITの分野では、一般的な情報やデータではなく、何らかの対象についての体系立った知識や、目的の解決に直接役立つような知見、実践的なノウハウや経験則などを言語化・可視化したもの、といった意味で用いられる。
+
+下記に記載したリンクを記載していってください。
+[テンプレート ](https://jobcrown.backlog.com/alias/wiki/1076674) を右メニューから「複製」することで簡単にwikiを作成可能です。
+
+##テクノロジ
+### [C言語・Java学習に関する情報](https://jobcrown.backlog.com/alias/wiki/1076104) 
+###  [Linux コマンド集1. (Red hat 系)](https://jobcrown.backlog.com/alias/wiki/1076461) 
+### [BGM自動再生シェル（サンプル）](https://jobcrown.backlog.com/alias/wiki/1076490) 
+### [エクセルからCSV出力するVBAプログラム](https://jobcrown.backlog.com/alias/wiki/1076568) 
+### [アルゴリズムを考える練習方法](https://jobcrown.backlog.com/alias/wiki/1077626) 
+### [プログラミング学習を助ける「英単語」](https://jobcrown.backlog.com/alias/wiki/1077642) 
+### [JavaSilver11_取得例（高塚さん）](https://jobcrown.backlog.com/alias/wiki/2940315) 
+
+##ストラテジ
+###  [運用の心得](https://jobcrown.backlog.com/alias/wiki/1056630) 
+
+##マネジメント
+### [生きるように働くことについて](https://jobcrown.backlog.com/alias/wiki/1076630) 
+
+##他社事例
+### [サイボウズエンジニア研修](https://jobcrown.backlog.com/alias/wiki/1317425) 

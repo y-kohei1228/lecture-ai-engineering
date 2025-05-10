@@ -1,0 +1,38 @@
+# 勉強会・研修/ナレッジ/サイボウズエンジニア研修2021年
+# ID: 1317425
+# 作成者: 飯田 浩史
+# 作成日時: 2021-09-02T09:30:53Z
+# 更新日時: 2021-09-02T09:38:28Z
+
+# [2021年のエンジニア新人研修の講義資料を公開しました](https://blog.cybozu.io/entry/2021/07/20/100000#Web%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%9F%BA%E7%A4%8E) 
+※サイボウズさんの研修資料です
+
+##2021年のエンジニア研修について
+> 今年の研修は、2021年1月に新設されたオンボーディングチームの運営でおこないました。 オンボーディングチームを新設した理由については、またどこかで紹介できればと思います。
+> 
+> 研修の形式ですが、サイボウズではリモートワークが当たり前になっており、今年もフルリモートでの開催となりました。 新たな挑戦としては、後から入社したメンバーや、興味を持っていただいた社外の皆様も講義を体験できるように、一部の講義を録画してもらいました。 ので、今年の講義資料には、動画付きの講義があります！
+> 
+> 研修の期間は、例年通り、4/26〜6/25までの2ヶ月間でした。
+> 
+> 自習期間（4/30, 5/6, 5/7）
+> 講義（4/26〜28, 5/10〜6/25）
+> ほぼ毎日1コマ
+> チーム体験（5/10〜6/18）
+> 1チームあたり2週間 ＊ 3チーム ＝ 6週間
+> 実践開発研修（6/21〜6/25）
+> 昨年との違いとしては、ゴールデンウィークの中日を自習期間や準備期間としました。 課題図書などを紹介（もちろん購入費用負担、購入自由）して、各自で自由に過ごしてもらいました。 講義を気にせず有給が取れた、チーム体験前の準備ができて良かった、など好評だったので来年も採用するかなーと考えています。 （7/21追記：休日に自習を強要しているように見えたので、修正しました。）
+
+##講義資料
+リンクを飛ぶと参照できます。
+
+飯田が勉強会として取り組んでみたいと考えている内容をここに記載しておきます。
+
+*  [Webアプリケーション概要](https://speakerdeck.com/cybozuinsideout/web-application-overview-2021) 
+*  [HTTP and DNS](https://speakerdeck.com/cybozuinsideout/http-and-dns-2021?slide=62) 
+*  [ソフトウェアテスト](https://speakerdeck.com/cybozuinsideout/software-testing?slide=13) 
+*  [テスト自動化](https://speakerdeck.com/cybozuinsideout/test-automation-b98fc9a4-3cca-4090-8550-0aaa636368e2?slide=46) 
+*  [アクセシビリティ](https://speakerdeck.com/cybozuinsideout/accessibility-2021?slide=2) 
+*  [Chrome Developer Toolsの使い方](https://speakerdeck.com/cybozuinsideout/chrome-developer-tools?slide=6) 
+*  [Design training](https://speakerdeck.com/cybozuinsideout/design-training-2021?slide=39) 
+*  [セキュリティ](https://speakerdeck.com/cybozuinsideout/security-2021) 
+*  [正規表現](https://speakerdeck.com/cybozuinsideout/regexp-2021?slide=13) 

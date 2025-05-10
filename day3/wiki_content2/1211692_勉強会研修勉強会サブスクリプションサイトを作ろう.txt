@@ -1,0 +1,93 @@
+# 勉強会・研修/勉強会/サブスクリプションサイトを作ろう
+# ID: 1211692
+# 作成者: 飯田 浩史
+# 作成日時: 2021-07-08T08:33:32Z
+# 更新日時: 2022-02-04T09:27:06Z
+
+#サブスクリプションサイトを作ろう
+
+##概要
+世の中にはたくさんのサービス・ビジネスが存在しています。
+ただし全てを一からプログラミングをして開発しなければ提供できない訳ではありません。
+ノーコードまたはローコードで出来てしまう部分もいくつかあります。
+
+今回は契約形態はサブスクリプションモデル（月額定期決済契約）を前提にサービスを考えてみようと思います。
+
+###事例
+*  [snaq.me](https://lp.snaq.me/) 
+    * おいしいマルシェおやつとワクワクを詰め込んでハッピーな「おやつ体験」をお届けします。
+    *  [サービス紹介動画](https://youtu.be/XPuuox1tdjA) 
+*  [nosh](https://nosh.jp/) 
+    * ナッシュは、一流シェフが調理し開発した、低糖質・低塩分の食事をご自宅までお届けします。
+    *  [サービス紹介動画](https://youtu.be/MbI8fQNydo4) 
+
+コンセプトが決まっていて、サイトと決済ページさえ出来てしまえば、後はサービスの提供内容に注力できます。
+[Wordpress ](https://ja.wordpress.org/) と[Stripe](https://stripe.com/jp) を使ってモデルはTelePaの際に経験しているので、割と簡単に構築できてしまいます。
+それぞれの説明と構築を行った後に、実際に作ってみようと思います。
+
+## [WordPress(ワードプレス)とは？](https://digital-marketing.jp/creative/what-is-wordpress/) 
+
+> WordPress（ワードプレス）とは、サイトの作成やブログの作成などができるCMS(コンテンツ管理システム)の1つで、無料のソフトウェアです。Web関連技術が無い人でもサイト管理や記事投稿ができるため、世界中のサイトのおよそ4分の1はWordPressで構築されていると言われています。
+> 
+> 全世界で最も使われているCMSであるWordPress。
+> 
+> WordPressってどんなことができるの？
+> 使用するメリットとデメリットって？
+> 利用する際に何か特別な技術は必要なの？
+> 
+> そんな人に向けた開設ページです
+
+Wordpressを利用するには本来は、レンタルサーバなどを契約して自動インストールをするのが一番手っ取り早いのですが、外部に公開しない（自分で実験的に使いたい）というだけであれば、 [Local](https://localwp.com/) といサービスで自分の端末内にインストールしてしまうのがお金もかからず楽です。
+
+### [環境の作り方はこちら](https://wpmake.jp/contents/knowledge/construct/about_local/) 
+10分で出来てしまいます。
+上記の構築はローカル環境に構築する方法ですが、Wordpressで作成したサイトを公開する場合はレンタルサーバを契約することが多いです。
+
+レンタルサーバを契約するのであれば、下記が個人的におすすめです。
+
+* 無料： [XFREE](https://www.xfree.ne.jp/) 
+* 有料： [さくらのレンタルサーバ](https://www.sakura.ne.jp/) 
+※プラグインを使えば、ローカルで作った内容をそのままコピーすることも可能です。
+
+## [Stripeとは？](https://www.sedesign.co.jp/blog/what-is-stripe) 
+
+> 2011年に開始されたオンライン決済サービス「Stripe」。本社をアメリカ・サンフランシスコに置き、日本を含む世界14カ国に事業所を展開するグローバル企業です。そんなStripeは、GoogleやAmazon、Uberなど誰もが知る大手企業から新たなビジネスを展開するスタートアップ企業まで、100万を超える企業で導入されています。
+> 
+> Stripeの最大の魅力は、銀行や金融機関、デジタルウォレットなどと連携していることです。Stripeを導入することで企業は決済における複雑な業務を排除できるため、ビジネスに集中できます。また、サービスが開始されてから数年経つ今でも週単位で新たな機能が追加されることも魅力の一つです。
+
+特徴は大きく3つ。
+
+* 最短1日で利用開始できる
+* ランニングコストを抑えられる
+    * 月額の固定費がかからず、手数料は一律3.6%
+* ダッシュボードの品質が高い
+    * 支払い履歴の検索や返金作業、不審請求への対応などをStripeのダッシュボードから行うことができます
+
+###Wordpressでサブスクリプションサイトを構築するには
+以下のような方法がありますが、TelePaの際は「Simple Membership」×「Stripe」で実現しました。
+※Stripe使わなくても実現は可能です。
+ [WooCommerce Subscriptionsを使って定期購読機能を導入する方法（＋7つの有望な代替プラグイン）](https://kinsta.com/jp/blog/woocommerce-subscriptions/) 
+　⇒GithubからZipをダウンロードしてアップロードする方法が、WooCommerce側のバージョンが更新されたことによりできなくなっていました
+ [サブスクリプションサービスを無料で作る方法](https://kinsta.com/jp/blog/woocommerce-subscriptions/) 
+
+### SImple Membershipプラグインを使ったStripeサブスクリプションボタンを作成するには
+ [Simple Membershipsオンライン会員サイト作成プラグイン～Stripeのサブスクリプション購入ボタン設定～](https://hanami-web.tokyo.jp/blog/member/create-stripe-subscription/) 
+ [Wordpressで運営しているホームページをStripeの定期決済に対応させる方法](https://wp-labo.com/wordpress-stripe-subscription-how-to/) 
+
+ [Simple Memberships会員登録プラグイン～ショートコード一覧～](https://hanami-web.tokyo.jp/blog/member/shortcode/) 
+⇒Stripe決済画面に飛ばすためのボタンを記載するためのショートコードが載っています
+
+ [Stripeアカウントにメンバー追加する手順について](https://note.com/ftt_kassai/n/n6ab77a70516c) 
+⇒オーナーアカウントは作ってあるので、勉強会参加者のユーザを追加します。
+ [Stripeにて商品（サブスクリプションプラン）を作成する方法](https://concrete5.co.jp/blog/stripe-subsctiption) 
+ [テスト用クレジットカード](https://stripe.com/docs/testing#international-cards) 
+
+###サイト作成に使えるオシャレな画像素材
+* 【写真】
+    * [pixabay ](https://pixabay.com/ja/) 
+    *  [Unsplash](https://unsplash.com/) 
+    * [BURST ](https://burst.shopify.com/) 
+    * [タダピク ](https://www.tadapic.com/) 
+* 【アイコン】
+    *  [flat-icon-design](http://flat-icon-design.com/) 
+    * [Icons8 ](https://icons8.jp/) 

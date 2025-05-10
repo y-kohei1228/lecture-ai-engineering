@@ -1,0 +1,38 @@
+# 勉強会・研修/勉強会スケジュール
+# ID: 1064547
+# 作成者: 飯田 浩史
+# 作成日時: 2021-04-30T07:07:31Z
+# 更新日時: 2022-05-13T05:37:46Z
+
+#勉強会スケジュール
+
+##ルール
+* 日付順に記載してください
+* 追記はだれでも可能です。
+* 調整さんで一人以上の参加確定者がいた場合（主催者を除く）に開催します
+* Zoomのアクセス情報は調整さんに記載をしてください
+    * Zoomを時間制限なしで利用したい場合は [飯田](https://w1587628791-8v3881142.slack.com/team/U01E2QE4WAC) までSlackで連絡ください。スケジュールを組んでURLを渡します。
+    * 「ホスト不在可」設定にしておくので、飯田が参加していなくてもZoomでのやりとりや画面共有が開始できます
+    * 社長会やリーダー会と共通のアカウントなので、自動で録画が始まってしまうかもしれませが、今のところどこかに録画データを配置する予定はありません（要望があれば検討します）
+* どういった趣旨の内容なのか事前にわかるようにしてください（資料を張り付けるか、リンクを貼るか）
+* 途中抜け途中参加自由です
+
+##2022年
+日程  | 主催者  | 内容 | 資料 | 調整さん |
+------------- | ------------- | ------------- | ------------- | ------------- |
+ |   |   |   |  | 
+
+##2021年
+日程  | 主催者  | 内容 | 資料 | 調整さん |
+------------- | ------------- | ------------- | ------------- | ------------- |
+05/20(木) 19:30～21:30 | 飯田 | Git勉強会（入門編） |https://jobcrown.backlog.com/alias/wiki/1084852 | https://chouseisan.com/s?h=7108bc2e0a0941189f21ae38e1cc25d1
+05/26(水) 18:30～19:30 | 飯田 | アルゴリズム学習会（アルゴロジック） |https://jobcrown.backlog.com/alias/wiki/1077626 | https://chouseisan.com/s?h=ef9fac07fbbc4fc293a9241e77a2aa1d
+06/03(木) 19:30～21:30 | 飯田 | Git勉強会（入門編②）。前回入門編の [Push](https://backlog.com/ja/git-tutorial/intro/13/) まで進んだのでその続きです。 |https://jobcrown.backlog.com/alias/wiki/1084852 | https://chouseisan.com/s?h=04a01aba2c6c4cf7a51025af18c099dc
+06/17(木) 19:30～21:30 | 飯田 | Git勉強会（発展編）。前回入門編を完了させることが出来たのでのでその続きです。発展編の最初からやります。 |https://jobcrown.backlog.com/alias/wiki/1084852 | https://chouseisan.com/s?h=2b682e788d77402bbc4ab3cc10d6ddcf
+07/08(木) 20:00～22:00 | 飯田 | Git勉強会（発展編②）。前回行った発展編の途中からやります。次は [リモートリポジトリ](https://backlog.com/ja/git-tutorial/stepup/14/)に関するところからです。  |https://jobcrown.backlog.com/alias/wiki/1084852 | https://chouseisan.com/s?h=0a52d054863848419e14fc311092618e
+07/21(水) 20:00～22:00 | 飯田 | Git勉強会（プルリクエスト編）。最終章です。Gitはあくまで手段にすぎません。技術力向上のために相互にコードレビューしていけるようなプロジェクト体制にしていきたいというお話です。  |https://jobcrown.backlog.com/alias/wiki/1084852 | https://chouseisan.com/s?h=115a6780ff8949a48fcd1db0488e4b4c | 
+07/29(木) 20:00～22:00 | 飯田 | WordpressとStripeのそれぞれの入門編を行った後、この2つを使ったサブスクリプションサービス契約サイトを構築する講座をやりたいと考えています。 | https://jobcrown.backlog.com/alias/wiki/1211692 | https://chouseisan.com/s?h=6dc537a2fa7c4962bf39afabac02a1f3 | 
+08/26(木) 20:00～22:00| 飯田 | サブスクリプションサイトを作ってみよう！の続きです。Wordpressプラグインを実際に使います。Stripeの管理画面に招待します。 | https://jobcrown.backlog.com/alias/wiki/1211692 | https://chouseisan.com/s?h=77ed5d8015184fd3a451280edb4eac72 | 
+09/11(土) 13:00～15:00| 山田 |  PowerShell勉強会　| https://jobcrown.backlog.com/alias/wiki/1269979 | https://chouseisan.com/s?h=4a7b695a93b14e91a353a10950583403 | 
+10/7(木) 19:00～20:30| 飯田 | セキュリティ（サイボウズ新人研修資料）：脆弱性ってどういうこと？SQLインジェクションって？などの内容について学べます。（最低限身に着けておくべきセキュリティ知識です） | https://speakerdeck.com/cybozuinsideout/security-2021 | https://chouseisan.com/s?h=56ec7ceade844eef9933859942957088 | 
+10/21(木) 20:00～21:30| 飯田 | Webアプリケーション概要（サイボウズ新人研修資料）：Webアプリを作るのに必要な基礎知識が学習できます。 | https://speakerdeck.com/cybozuinsideout/web-application-overview-2021 | https://chouseisan.com/s?h=393138d5b87748c2a674f7efbb55c5e2 | 
