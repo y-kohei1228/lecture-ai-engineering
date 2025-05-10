@@ -1,0 +1,57 @@
+# ★作業中★ファイル一覧
+# ID: 1563119
+# 作成者: 飯田 浩史
+# 作成日時: 2022-01-04T08:52:46Z
+# 更新日時: 2022-01-07T10:24:52Z
+
+# 0.重要 
+■NAC会資料 [LINK](https://jobcrown.backlog.com/file/FILESTRAGE/0.%E9%87%8D%E8%A6%81/NAC%E4%BC%9A%E8%B3%87%E6%96%99/) 
+
+# 10.社内通知
+■健康診断関連 [LINK](https://jobcrown.backlog.com/alias/file/6695718)  
+■一般事業主行動計画(産前産後休業(産休)・育児休業(育休)支援の行動計画) [LINK](https://jobcrown.backlog.com/file/FILESTRAGE/10.%E7%A4%BE%E5%86%85%E9%80%9A%E7%9F%A5/%E4%B8%80%E8%88%AC%E4%BA%8B%E6%A5%AD%E4%B8%BB%E8%A1%8C%E5%8B%95%E8%A8%88%E7%94%BB/) 
+■人事異動通達 [LINK](https://jobcrown.backlog.com/file/FILESTRAGE/10.%E7%A4%BE%E5%86%85%E9%80%9A%E7%9F%A5/%E4%BA%BA%E4%BA%8B%E7%95%B0%E5%8B%95%E9%80%9A%E9%81%94/) 
+■【Unipos】従業員説明会資料 [LINK](https://jobcrown.backlog.com/file/FILESTRAGE/10.%E7%A4%BE%E5%86%85%E9%80%9A%E7%9F%A5/) 
+■新型コロナウイルスの感染が疑われる場合の対応 [LINK](https://jobcrown.backlog.com/file/FILESTRAGE/10.%E7%A4%BE%E5%86%85%E9%80%9A%E7%9F%A5/) 
+■年間スケジュール [LINK](https://jobcrown.backlog.com/file/FILESTRAGE/10.%E7%A4%BE%E5%86%85%E9%80%9A%E7%9F%A5/) 
+
+# 20.社内規定
+■36協定 [LINK](https://jobcrown.backlog.com/file/FILESTRAGE/20.%E7%A4%BE%E5%86%85%E8%A6%8F%E5%AE%9A/) 
+■ストレスチェック制度実施規程 [LINK](https://jobcrown.backlog.com/file/FILESTRAGE/20.%E7%A4%BE%E5%86%85%E8%A6%8F%E5%AE%9A/) 
+■テレワーク(リモートワーク・在宅勤務)セキュリティガイドライン [LINK](https://jobcrown.backlog.com/file/FILESTRAGE/20.%E7%A4%BE%E5%86%85%E8%A6%8F%E5%AE%9A/) 
+■就業規則 [LINK](https://jobcrown.backlog.com/file/FILESTRAGE/20.%E7%A4%BE%E5%86%85%E8%A6%8F%E5%AE%9A/) 
+■情報セキュリティ関連 [LINK](https://jobcrown.backlog.com/file/FILESTRAGE/20.%E7%A4%BE%E5%86%85%E8%A6%8F%E5%AE%9A/) 
+■労働者の育児休業(育休)の取得・職場復帰支援方針について [LINK](https://jobcrown.backlog.com/file/FILESTRAGE/20.%E7%A4%BE%E5%86%85%E8%A6%8F%E5%AE%9A/) 
+
+# 30.勤怠関連
+■作業報告書テンプレート [LINK](https://jobcrown.backlog.com/alias/file/6729946) 
+■夏季休暇について [LINK](https://jobcrown.backlog.com/alias/file/6729946) 
+■勤怠申請テンプレート(有給・欠勤・忌引き) [LINK](https://jobcrown.backlog.com/alias/file/6729946) 
+■代休関連 [LINK](https://jobcrown.backlog.com/alias/file/6729946) 
+■特別休業取得申請について [LINK](https://jobcrown.backlog.com/alias/file/6729946) 
+
+# 40.申請書関連
+■交通費申請書 [LINK](https://jobcrown.backlog.com/alias/file/6729953) 
+■通勤費申請書 [LINK](https://jobcrown.backlog.com/alias/file/6729953) 
+■定期代申請書 [LINK](https://jobcrown.backlog.com/alias/file/6729953) 
+■出張費申請書 [LINK](https://jobcrown.backlog.com/alias/file/6729953) 
+■身上異動届 [LINK](https://jobcrown.backlog.com/alias/file/6729953) 
+■口座振込申請書 [LINK](https://jobcrown.backlog.com/alias/file/6729953) 
+
+# 50.評価制度
+■評価者一覧 [LINK](https://jobcrown.backlog.com/alias/file/6729955) 
+
+# 60.資格取得支援
+■資格取得申請書 [LINK](https://jobcrown.backlog.com/alias/file/6729962) 
+■資格取得報奨金一覧表 [LINK](https://jobcrown.backlog.com/alias/file/6729962) 
+
+# 70.情報共有
+■お役立ち情報 [LINK](https://jobcrown.backlog.com/alias/file/6729973)  ※情報は古い可能性があります。
+
+# 80.活動報告
+■NAC会 [LINK](https://jobcrown.backlog.com/alias/file/7306230) 
+■サークル活動 [LINK](https://jobcrown.backlog.com/alias/file/7306234) 
+
+# 90.技術経歴書
+■技術経歴書(スキルシート)見本 [LINK](https://jobcrown.backlog.com/alias/file/6729986)
+　※運用はスプレッドシートによりWeb上で行うため、ファイル自体は不要です。

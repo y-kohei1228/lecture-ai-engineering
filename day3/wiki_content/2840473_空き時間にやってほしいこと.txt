@@ -1,0 +1,24 @@
+# 空き時間にやってほしいこと
+# ID: 2840473
+# 作成者: 赤坂 百夏
+# 作成日時: 2023-07-26T09:01:41Z
+# 更新日時: 2025-03-31T06:58:26Z
+
+#空き時間にやってほしいこと
+
+手続きなどで飯田が席を外している際などの空き時間に以下の対応をお願いいたします。
+
+##対応（優先度順）
+1、slack、backlogのアプリダウンロード
+2、 [就業規則](https://jobcrown.backlog.com/file/FILESTRAGE/20.%E7%A4%BE%E5%86%85%E8%A6%8F%E5%AE%9A/%E5%B0%B1%E6%A5%AD%E8%A6%8F%E5%89%87/) の全文を確認
+　　backlogの全体→ファイル→20.社内規定→就業規則
+　　全文を確認のうえ、不明点は赤坂までご連絡ください。
+3、backlogの全体プロジェクト確認
+　⇒[wiki ](https://jobcrown.backlog.com/alias/wiki/748473) と [ファイル](https://jobcrown.backlog.com/file/FILESTRAGE) 
+　　⇒特にwikiの福利厚生の[借り上げ社宅制度について](https://jobcrown.backlog.com/wiki/FILESTRAGE/%E7%A6%8F%E5%88%A9%E5%8E%9A%E7%94%9F%2F%E5%80%9F%E4%B8%8A%E7%A4%BE%E5%AE%85%E5%88%B6%E5%BA%A6) の動画は必ず視聴する
+4、入社資料（このbacklogも含む）の読み込み
+
+5、取得資格の決定、報告（第5営業日まで）
+　※社内研修の場合のみ
+6、slackの過去投稿の確認
+

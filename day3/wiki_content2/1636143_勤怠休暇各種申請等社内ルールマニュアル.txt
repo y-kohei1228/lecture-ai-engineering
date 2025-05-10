@@ -1,0 +1,30 @@
+# 勤怠・休暇・各種申請等社内ルール＆マニュアル
+# ID: 1636143
+# 作成者: 八木秋香
+# 作成日時: 2022-02-03T10:57:58Z
+# 更新日時: 2024-02-02T04:47:25Z
+
+#1.勤怠関連のルール
+* ### [代休申請](https://jobcrown.backlog.com/alias/wiki/1636144) 
+* ### [現場都合による特別休業取得申請](https://jobcrown.backlog.com/alias/wiki/1731360) 
+* ### [自社待機時の打刻方法](https://jobcrown.backlog.com/alias/wiki/2647027) 
+
+#2.申請関連
+* ### [【月末提出時】現場用作業報告書・定期代申請書・出張＆経費領収書の提出方法](https://jobcrown.backlog.com/alias/wiki/2237345) 
+* ### [出張費申請](https://jobcrown.backlog.com/alias/wiki/1731379) 
+* ### [資格取得申請](https://jobcrown.backlog.com/alias/wiki/1731272) 
+* ### [身上異動届](https://jobcrown.backlog.com/alias/wiki/2563415) 
+
+#3.freee勤怠管理Plus 操作方法
+* ###  [打刻方法](https://jobcrown.backlog.com/alias/wiki/2007418) 
+* ###  [休暇・代休申請](https://jobcrown.backlog.com/alias/wiki/2017293)
+* ###  [通勤費・交通費申請](https://jobcrown.backlog.com/alias/wiki/2017294)
+* ### [経費申請](https://jobcrown.backlog.com/alias/wiki/1731393) 
+* ###  [月末月初にやること](https://jobcrown.backlog.com/alias/wiki/2103168)
+
+#4.freee人事労務 操作方法
+* ###  [給与・賞与明細確認方法](https://jobcrown.backlog.com/alias/wiki/2403039)　
+* ###  [源泉徴収票確認方法](https://jobcrown.backlog.com/alias/wiki/3176550)
+
+#5.その他
+* ###  [メールとSlackの連携方法](https://jobcrown.backlog.com/alias/wiki/3261961) new

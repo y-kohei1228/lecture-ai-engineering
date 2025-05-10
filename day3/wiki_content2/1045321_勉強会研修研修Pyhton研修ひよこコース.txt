@@ -1,0 +1,12 @@
+# 勉強会・研修/研修/Pyhton研修/ひよこコース
+# ID: 1045321
+# 作成者: 飯田 浩史
+# 作成日時: 2021-04-21T00:55:29Z
+# 更新日時: 2021-07-09T04:15:41Z
+
+# [第１回](https://ameblo.jp/jobcrown-it/entry-12542945358.html) 
+# [第２回](https://ameblo.jp/jobcrown-it/entry-12554690358.html) 
+# [第３回](https://ameblo.jp/jobcrown-it/entry-12567120552.html) 
+# [第４回](https://ameblo.jp/jobcrown-it/entry-12574757513.html) 
+# [第５回](https://ameblo.jp/jobcrown-it/entry-12580044419.html) 
+# [第５回（模擬試験の解説）](https://ameblo.jp/jobcrown-it/entry-12581202851.html) 
