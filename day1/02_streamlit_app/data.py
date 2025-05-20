@@ -1,7 +1,7 @@
 # data.py
 import streamlit as st
 from datetime import datetime
-from database import save_to_db, get_db_count # DB操作関数をインポート
+from database import save_to_db, get_db_count  # DB操作関数をインポート
 
 # サンプルデータのリスト
 SAMPLE_QUESTIONS_DATA = [
@@ -12,16 +12,16 @@ SAMPLE_QUESTIONS_DATA = [
         "feedback": "部分的に正確: 基本的な説明は正しいですが、具体的な構文例が示されていません",
         "is_correct": 0.5,
         "response_time": 1.2,
-        "share_internally": False
+        "share_internally": False,
     },
     {
         "question": "機械学習における過学習とは？",
         "answer": "過学習（オーバーフィッティング）とは、機械学習モデルが訓練データに対して過度に適合し、新しいデータに対する汎化性能が低下する現象です。",
         "correct_answer": "過学習（オーバーフィッティング）は、モデルがトレーニングデータに過度に適合し、未知のデータに対する予測性能が低下する現象です。モデルが訓練データのノイズまで学習してしまうことが原因です。",
         "feedback": "正確: 過学習の本質をよく捉えています",
-        "is_correct": 1.0, # 整数ではなく浮動小数点数で統一
+        "is_correct": 1.0,  # 整数ではなく浮動小数点数で統一
         "response_time": 1.5,
-        "share_internally": False
+        "share_internally": False,
     },
     # ... (他のサンプルデータも同様に追加) ...
     {
@@ -31,7 +31,7 @@ SAMPLE_QUESTIONS_DATA = [
         "feedback": "部分的に正確: 基本概念は正しいですが、詳細な説明が不足しています",
         "is_correct": 0.5,
         "response_time": 2.1,
-        "share_internally": False
+        "share_internally": False,
     },
     {
         "question": "Streamlitとは何ですか？",
@@ -40,7 +40,7 @@ SAMPLE_QUESTIONS_DATA = [
         "feedback": "正確: Streamlitの基本概念と利点をよく説明しています",
         "is_correct": 1.0,
         "response_time": 0.9,
-        "share_internally": False
+        "share_internally": False,
     },
     {
         "question": "ブロックチェーンの仕組みを説明してください",
@@ -49,16 +49,16 @@ SAMPLE_QUESTIONS_DATA = [
         "feedback": "部分的に正確: 基本的な説明はありますが、コンセンサスメカニズムについての言及がありません",
         "is_correct": 0.5,
         "response_time": 1.8,
-        "share_internally": False
+        "share_internally": False,
     },
-        {
+    {
         "question": "ディープラーニングとは何ですか？",
         "answer": "ディープラーニングは、複数の層からなるニューラルネットワークを用いた機械学習手法です。画像認識や自然言語処理など複雑なタスクに優れています。",
         "correct_answer": "ディープラーニングは多層ニューラルネットワークを使用した機械学習の一種で、特徴抽出を自動的に行う能力があります。画像認識、自然言語処理、音声認識などの複雑なタスクで革命的な成果を上げており、大量のデータと計算リソースを活用して従来の手法を超える性能を実現しています。",
         "feedback": "部分的に正確: 基本的な定義は正しいですが、詳細な説明が不足しています",
         "is_correct": 0.5,
         "response_time": 1.3,
-        "share_internally": False
+        "share_internally": False,
     },
     {
         "question": "SQLインジェクションとは何ですか？",
@@ -67,7 +67,7 @@ SAMPLE_QUESTIONS_DATA = [
         "feedback": "正確: SQLインジェクションの本質と発生メカニズムをよく説明しています",
         "is_correct": 1.0,
         "response_time": 1.6,
-        "share_internally": False
+        "share_internally": False,
     },
     {
         "question": "NFTとは何ですか？",
@@ -76,7 +76,7 @@ SAMPLE_QUESTIONS_DATA = [
         "feedback": "正確: NFTの基本概念とユースケースを明確に説明しています",
         "is_correct": 1.0,
         "response_time": 1.4,
-        "share_internally": False
+        "share_internally": False,
     },
     {
         "question": "Pythonのデコレータとは何ですか？",
@@ -85,7 +85,7 @@ SAMPLE_QUESTIONS_DATA = [
         "feedback": "部分的に正確: 基本的な説明はありますが、デコレータが高階関数であることや具体的な使用例の説明が不足しています",
         "is_correct": 0.5,
         "response_time": 1.2,
-        "share_internally": False
+        "share_internally": False,
     },
     {
         "question": "コンテナ技術とは何ですか？",
@@ -94,8 +94,8 @@ SAMPLE_QUESTIONS_DATA = [
         "feedback": "部分的に正確: 基本的な説明はありますが、仮想マシンとの違いやDockerなどの具体例の説明が不足しています",
         "is_correct": 0.5,
         "response_time": 1.1,
-        "share_internally": False
-    }
+        "share_internally": False,
+    },
 ]
 
 
@@ -114,16 +114,19 @@ def create_sample_evaluation_data():
                 correct_answer=item["correct_answer"],
                 is_correct=item["is_correct"],
                 response_time=item["response_time"],
-                share_internally=item["share_internally"]
+                share_internally=item["share_internally"],
             )
             added_count += 1
 
         count_after = get_db_count()
-        st.success(f"{added_count} 件のサンプル評価データが正常に追加されました。(合計: {count_after} 件)")
+        st.success(
+            f"{added_count} 件のサンプル評価データが正常に追加されました。(合計: {count_after} 件)"
+        )
 
     except Exception as e:
         st.error(f"サンプルデータの作成中にエラーが発生しました: {e}")
-        print(f"エラー詳細: {e}") # コンソールにも出力
+        print(f"エラー詳細: {e}")  # コンソールにも出力
+
 
 def ensure_initial_data():
     """データベースが空の場合に初期サンプルデータを投入する"""

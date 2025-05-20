@@ -7,9 +7,7 @@ import time
 # ページ設定
 # ============================================
 st.set_page_config(
-    page_title="Streamlit デモ",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    page_title="Streamlit デモ", layout="wide", initial_sidebar_state="expanded"
 )
 
 # ============================================
@@ -17,13 +15,17 @@ st.set_page_config(
 # ============================================
 st.title("Streamlit 初心者向けデモ")
 st.markdown("### コメントを解除しながらStreamlitの機能を学びましょう")
-st.markdown("このデモコードでは、コメントアウトされた部分を順番に解除しながらUIの変化を確認できます。")
+st.markdown(
+    "このデモコードでは、コメントアウトされた部分を順番に解除しながらUIの変化を確認できます。"
+)
 
 # ============================================
-# サイドバー 
+# サイドバー
 # ============================================
 st.sidebar.header("デモのガイド")
-st.sidebar.info("コードのコメントを解除して、Streamlitのさまざまな機能を確認しましょう。")
+st.sidebar.info(
+    "コードのコメントを解除して、Streamlitのさまざまな機能を確認しましょう。"
+)
 
 # ============================================
 # 基本的なUI要素
@@ -53,8 +55,7 @@ st.write(f"あなたの年齢: {age}")
 # セレクトボックス
 st.subheader("セレクトボックス")
 option = st.selectbox(
-    "好きなプログラミング言語は?",
-    ["Python", "JavaScript", "Java", "C++", "Go", "Rust"]
+    "好きなプログラミング言語は?", ["Python", "JavaScript", "Java", "C++", "Go", "Rust"]
 )
 st.write(f"あなたは{option}を選びました")
 
@@ -93,11 +94,13 @@ with st.expander("詳細を表示"):
 st.header("データの表示")
 
 # サンプルデータフレームを作成
-df = pd.DataFrame({
-    '名前': ['田中', '鈴木', '佐藤', '高橋', '伊藤'],
-    '年齢': [25, 30, 22, 28, 33],
-    '都市': ['東京', '大阪', '福岡', '札幌', '名古屋']
-})
+df = pd.DataFrame(
+    {
+        "名前": ["田中", "鈴木", "佐藤", "高橋", "伊藤"],
+        "年齢": [25, 30, 22, 28, 33],
+        "都市": ["東京", "大阪", "福岡", "札幌", "名古屋"],
+    }
+)
 
 # データフレーム表示
 st.subheader("データフレーム")
@@ -121,17 +124,14 @@ st.header("グラフの表示")
 
 # ラインチャート
 st.subheader("ラインチャート")
-chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns=['A', 'B', 'C'])
+chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["A", "B", "C"])
 st.line_chart(chart_data)
 
 # バーチャート
 st.subheader("バーチャート")
-chart_data = pd.DataFrame({
-    'カテゴリ': ['A', 'B', 'C', 'D'],
-    '値': [10, 25, 15, 30]
-}).set_index('カテゴリ')
+chart_data = pd.DataFrame(
+    {"カテゴリ": ["A", "B", "C", "D"], "値": [10, 25, 15, 30]}
+).set_index("カテゴリ")
 st.bar_chart(chart_data)
 
 # ============================================
@@ -155,9 +155,9 @@ if uploaded_file is not None:
     # ファイルのデータを表示
     bytes_data = uploaded_file.getvalue()
     st.write(f"ファイルサイズ: {len(bytes_data)} bytes")
-    
+
     # CSVの場合はデータフレームとして読み込む
-    if uploaded_file.name.endswith('.csv'):
+    if uploaded_file.name.endswith(".csv"):
         df = pd.read_csv(uploaded_file)
         st.write("CSVデータのプレビュー:")
         st.dataframe(df.head())
@@ -168,7 +168,8 @@ if uploaded_file is not None:
 st.header("スタイルのカスタマイズ")
 
 # カスタムCSS
-st.markdown("""
+st.markdown(
+    """
 <style>
 .big-font {
     font-size:20px ！important;
@@ -176,23 +177,31 @@ st.markdown("""
     color: #0066cc;
 }
 </style>
-""", unsafe_allow_html=True)
+""",
+    unsafe_allow_html=True,
+)
 
-st.markdown('<p class="big-font">これはカスタムCSSでスタイリングされたテキストです！</p>', unsafe_allow_html=True)
+st.markdown(
+    '<p class="big-font">これはカスタムCSSでスタイリングされたテキストです！</p>',
+    unsafe_allow_html=True,
+)
 
 # ============================================
 # デモの使用方法
 # ============================================
 st.divider()
 st.subheader("このデモの使い方")
-st.markdown("""
+st.markdown(
+    """
 1. コードエディタでコメントアウトされた部分を見つけます（#で始まる行）
 2. 確認したい機能のコメントを解除します（先頭の#を削除）
 3. 変更を保存して、ブラウザで結果を確認します
 4. 様々な組み合わせを試して、UIがどのように変化するか確認しましょう
-""")
+"""
+)
 
-st.code("""
+st.code(
+    """
 # コメントアウトされた例:
 # if st.button("クリックしてください"):
 #     st.success("ボタンがクリックされました！")
@@ -200,4 +209,5 @@ st.code("""
 # コメントを解除した例:
 if st.button("クリックしてください"):
     st.success("ボタンがクリックされました！")
-""")
+"""
+)
