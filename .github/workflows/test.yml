@@ -15,7 +15,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'
+        python-version: '3.12'
         
     - name: Install dependencies
       run: |
@@ -39,3 +39,39 @@ jobs:
     - name: Run model tests
       run: |
         pytest day5/演習3/tests/test_model.py -v
+
+    - name: Check model performance
+      run: |
+        # モデルの推論精度チェック（0.75以上）
+        pytest day5/演習3/tests/test_model.py::test_model_accuracy -v
+        
+        # モデルの推論時間チェック（1秒未満）
+        pytest day5/演習3/tests/test_model.py::test_model_inference_time -v
+        
+        # モデルの再現性チェック
+        pytest day5/演習3/tests/test_model.py::test_model_reproducibility -v
+        
+        # モデルの存在確認
+        pytest day5/演習3/tests/test_model.py::test_model_exists -v
+
+    - name: Check model stability
+      run: |
+        # 複数回実行時の結果の一貫性を確認
+        for i in {1..5}; do
+          pytest day5/演習3/tests/test_model.py::test_model_accuracy -v
+        done
+
+    - name: Check machine performance
+      run: |
+        # メモリ使用量の監視
+        pytest day5/演習3/tests/test_performance.py::test_memory_usage -v
+        # CPU使用率の監視
+        pytest day5/演習3/tests/test_performance.py::test_cpu_usage -v
+        # ディスク使用量の監視
+        pytest day5/演習3/tests/test_performance.py::test_disk_usage -v
+        # ネットワーク使用量の監視
+        pytest day5/演習3/tests/test_performance.py::test_network_usage -v
+        # ストレージ使用量の監視
+        pytest day5/演習3/tests/test_performance.py::test_storage_usage -v
+        # GPU使用率の監視
+        pytest day5/演習3/tests/test_performance.py::test_gpu_usage -v
