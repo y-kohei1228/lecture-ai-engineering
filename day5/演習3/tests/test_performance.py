@@ -13,7 +13,7 @@ import GPUtil
 def test_memory_usage():
     """メモリ使用量をチェックします."""
     process = psutil.Process(os.getpid())
-    initial_memory = process.memory_info().rss / 1024 / 1024  # MB単位 # fmt: skip
+    initial_memory = process.memory_info().rss / 1024 / 1024  # MB単位
 
     # テスト実行
     time.sleep(1)  # テスト実行をシミュレート
@@ -81,7 +81,7 @@ def test_storage_usage():
         # モデルファイルの合計サイズが500MB未満であることを確認
         assert (
             total_size < 500 * 1024 * 1024
-        ), f"モデルファイルのサイズが大きすぎます: {total_size / (1024 * 1024):.2f}MB" # fmt: skip
+        ), f"モデルファイルのサイズが過大: {total_size / (1024 * 1024):.2f}MB"
         
 
 
@@ -123,7 +123,7 @@ def test_model_size():
     base_dir = os.path.dirname(__file__)
     model_path = os.path.join(base_dir, "../models/titanic_model.pkl")
     if os.path.exists(model_path):
-        model_size = os.path.getsize(model_path) / (1024 * 1024)  # MB単位 # fmt: skip
+        model_size = os.path.getsize(model_path) / (1024 * 1024)  # MB単位
 
         # モデルサイズが100MB未満であることを確認
         assert (
