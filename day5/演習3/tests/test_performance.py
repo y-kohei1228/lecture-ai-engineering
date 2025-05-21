@@ -22,7 +22,9 @@ def test_memory_usage():
     memory_used = final_memory - initial_memory
 
     # メモリ使用量が1GB未満であることを確認
-    assert memory_used < 1024, f"メモリ使用量が高すぎます: {memory_used:.2f}MB"
+    assert (
+        memory_used < 1024
+    ), f"メモリ使用量が高すぎます: {memory_used:.2f}MB"
 
 
 def test_cpu_usage():
@@ -33,7 +35,9 @@ def test_cpu_usage():
     cpu_percent = process.cpu_percent(interval=1)
 
     # CPU使用率が80%未満であることを確認
-    assert cpu_percent < 80, f"CPU使用率が高すぎます: {cpu_percent}%"
+    assert (
+        cpu_percent < 80
+    ), f"CPU使用率が高すぎます: {cpu_percent}%"
 
 
 def test_disk_usage():
@@ -43,7 +47,9 @@ def test_disk_usage():
     usage = psutil.disk_usage(current_dir)
 
     # ディスク使用率が90%未満であることを確認
-    assert usage.percent < 90, f"ディスク使用率が高すぎます: {usage.percent}%"
+    assert (
+        usage.percent < 90
+    ), f"ディスク使用率が高すぎます: {usage.percent}%"
 
 
 def test_network_usage():
@@ -52,8 +58,12 @@ def test_network_usage():
     net_io = psutil.net_io_counters()
 
     # 送受信バイト数が1GB未満であることを確認
-    assert net_io.bytes_sent < 1024 * 1024 * 1024, "送信量が多すぎます"
-    assert net_io.bytes_recv < 1024 * 1024 * 1024, "受信量が多すぎます"
+    assert (
+        net_io.bytes_sent < 1024 * 1024 * 1024
+    ), "送信量が多すぎます"
+    assert (
+        net_io.bytes_recv < 1024 * 1024 * 1024
+    ), "受信量が多すぎます"
 
 
 def test_storage_usage():
@@ -71,7 +81,8 @@ def test_storage_usage():
         # モデルファイルの合計サイズが500MB未満であることを確認
         assert (
             total_size < 500 * 1024 * 1024
-        ), f"モデルファイルのサイズが大きすぎます: {total_size / (1024 * 1024):.2f}MB"
+        ), f"モデルファイルのサイズが大きすぎます: {total_size / (1024 * 1024):.2f}MB" # fmt: skip
+        
 
 
 def test_gpu_usage():
@@ -81,7 +92,9 @@ def test_gpu_usage():
         if gpus:
             for gpu in gpus:
                 # GPU使用率が90%未満であることを確認
-                assert gpu.load * 100 < 90, f"GPU使用率が高すぎます: {gpu.load * 100}%"
+                assert (
+                    gpu.load * 100 < 90
+                ), f"GPU使用率が高すぎます: {gpu.load * 100}%"
                 # GPUメモリ使用率が90%未満であることを確認
                 assert (
                     gpu.memoryUtil * 100 < 90
@@ -100,7 +113,9 @@ def test_inference_time():
     inference_time = end_time - start_time
 
     # 推論時間が0.5秒未満であることを確認
-    assert inference_time < 0.5, f"推論時間が長すぎます: {inference_time:.3f}秒"
+    assert (
+        inference_time < 0.5
+    ), f"推論時間が長すぎます: {inference_time:.3f}秒"
 
 
 def test_model_size():
@@ -111,6 +126,8 @@ def test_model_size():
         model_size = os.path.getsize(model_path) / (1024 * 1024)  # MB単位
 
         # モデルサイズが100MB未満であることを確認
-        assert model_size < 100, f"モデルサイズが大きすぎます: {model_size:.2f}MB"
+        assert (
+            model_size < 100
+        ), f"モデルサイズが大きすぎます: {model_size:.2f}MB"
     else:
         pytest.skip("モデルファイルが存在しないためスキップします")
