@@ -13,7 +13,7 @@ import GPUtil
 def test_memory_usage():
     """メモリ使用量をチェックします."""
     process = psutil.Process(os.getpid())
-    initial_memory = process.memory_info().rss / 1024 / 1024  # MB単位
+    initial_memory = process.memory_info().rss / 1024 / 1024  # MB単位 # fmt: skip
 
     # テスト実行
     time.sleep(1)  # テスト実行をシミュレート
@@ -123,7 +123,7 @@ def test_model_size():
     base_dir = os.path.dirname(__file__)
     model_path = os.path.join(base_dir, "../models/titanic_model.pkl")
     if os.path.exists(model_path):
-        model_size = os.path.getsize(model_path) / (1024 * 1024)  # MB単位
+        model_size = os.path.getsize(model_path) / (1024 * 1024)  # MB単位 # fmt: skip
 
         # モデルサイズが100MB未満であることを確認
         assert (
